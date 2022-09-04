@@ -1,0 +1,12 @@
+{
+  "name": "mi-proyecto-lindo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "un buen proyecto",
+  "scripts": {
+    "server": "cls && node expressServer.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

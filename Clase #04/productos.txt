@@ -1,0 +1,55 @@
+Nombre, Precio
+Silla Paris, 2500
+Silla Roma, 5000
+Silla Londres, 5500
+Silla Nueva York, 7500
+Silla Tokio, 3750
+Silla Kloster, 10000
+Mesa Paris, 3500
+Mesa Roma, 7000
+Mesa Londres, 7700
+Mesa Nueva York, 10500
+Mesa Tokio, 5250
+Mesa Kloster, 14000
+Mesa de luz Paris, 1500
+Mesa de luz Roma, 3000
+Mesa de luz Londres, 3300
+Mesa de luz Nueva York, 4500
+Mesa de luz Tokio, 2250
+Mesa de luz Kloster, 6000
+Sillón Paris, 4500
+Sillón Roma, 9000
+Sillón Londres, 9900
+Sillón Nueva York, 13500
+Sillón Tokio, 6750
+Sillón Kloster, 18000
+Escritorio Paris, 5500
+Escritorio Roma, 11000
+Escritorio Londres, 12100
+Escritorio Nueva York, 16500
+Escritorio Tokio, 8250
+Escritorio Kloster, 22000
+Cama Paris, 7500
+Cama Roma, 15000
+Cama Londres, 16500
+Cama Nueva York, 22500
+Cama Tokio, 11250
+Cama Kloster, 30000
+Cómoda Paris, 6500
+Cómoda Roma, 13000
+Cómoda Londres, 14300
+Cómoda Nueva York, 19500
+Cómoda Tokio, 9750
+Cómoda Kloster, 26000
+Biblioteca Paris, 8500
+Biblioteca Roma, 17000
+Biblioteca Londres, 18700
+Biblioteca Nueva York, 25500
+Biblioteca Tokio, 12750
+Biblioteca Kloster, 34000
+Banco Paris, 9500
+Banco Roma, 19000
+Banco Londres, 20900
+Banco Nueva York, 28500
+Banco Tokio, 14250
+Banco Kloster, 38000
