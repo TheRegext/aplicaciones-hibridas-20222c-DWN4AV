@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos</title>
 </head>
 <body>
-    <p>Hola <%- name %></p>
+    <a href="/nuevo.html">Agregar Uno</a>
+    <ul>
+    <% for (let i = 0; i < productos.length; i++) { %>
+        <%- include('ProductoItem', {producto: productos[i]}) %>
+    <% } %>
+    </ul>
 </body>
 </html>
