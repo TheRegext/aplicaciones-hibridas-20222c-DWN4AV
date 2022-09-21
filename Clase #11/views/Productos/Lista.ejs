@@ -1,0 +1,10 @@
+<%- include('../Layouts/Header', {title: "Productos"}) %>
+
+<a href="/productos/nuevo">Agregar Uno</a>
+<ul>
+<% for (let i = 0; i < productos.length; i++) { %>
+    <%- include('ListaItem', {producto: productos[i]}) %>
+<% } %>
+</ul>
+
+<%- include('../Layouts/Footer') %>
