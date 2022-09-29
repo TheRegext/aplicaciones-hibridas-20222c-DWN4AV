@@ -1,0 +1,29 @@
+<%- include('../Layouts/Header', {title: "Categorias"})%>
+
+<h1>Categorias</h1>
+<table>
+    <thead>
+        <th>
+            <td>
+                Nombre
+            </td>
+            <td>
+                Acciones
+            </td>
+        </th>
+    </thead>
+    <tbody>
+        <% for(let i=0; i<categorias.length; i++){%>
+            <tr>
+                <td>
+                    <%= categorias[i].name %>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        <% }%>
+    </tbody>
+</table>
+
+<%- include('../Layouts/Footer')%>
