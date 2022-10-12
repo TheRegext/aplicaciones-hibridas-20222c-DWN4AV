@@ -73,11 +73,16 @@ function eliminar(req, res) {
 
 function formEditar(req, res) {
     const id = req.params.idProducto
+    let categorias = []
 
-    ProductosService.traerProductoByID(id)
+    CategoriasService.traerCategorias()
+        .then(function (todos) {
+            categorias = todos
+            return ProductosService.traerProductoByID(id)
+        })
         .then(function (producto) {
             if (producto) {
-                res.render('Productos/Cargar', { producto })
+                res.render('Productos/Cargar', { producto, categorias })
             }
             else {
                 res.render('404')
@@ -90,7 +95,8 @@ function editar(req, res) {
     const id = req.params.idProducto
     const producto = {
         name: req.body.name,
-        price: req.body.price
+        price: req.body.price,
+        category: req.body.category
     }
     ProductosService.editar(id, producto)
         .then(function (producto) {

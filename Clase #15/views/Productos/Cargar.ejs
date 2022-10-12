@@ -17,13 +17,13 @@
         <input type="text" name="name" value="<%= producto.name %>" />
     </label>
     <label> Precio:
-        <input <%= (edit && producto.price > 200 ? 'disabled':'') %> type="number" name="price" value="<%= producto.price %>"/>
+        <input type="number" name="price" value="<%= producto.price %>"/>
     </label>
     <label>
         Categoria:
         <select name="category">
             <% for(let i=0; i< categorias.length; i++){ %>
-                <option value="<%= categorias[i].name %>" ><%= categorias[i].name %></option>
+                <option value="<%= categorias[i].name %>" <%= (categorias[i].name == producto.category)?"selected":"" %> ><%= categorias[i].name %></option>
             <% } %>
         </select>
     </label>

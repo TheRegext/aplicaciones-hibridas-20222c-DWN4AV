@@ -79,5 +79,8 @@ let Productos = [{
     name: 'Leche',
     price: 200,
 
-    category: 'Lacteos'
+    category: {
+        _id: ObjectId("5f9e1b9b9b9b9b9b9b9b9b9b"),
+        name: 'Lacteos',
+    }
 }]
