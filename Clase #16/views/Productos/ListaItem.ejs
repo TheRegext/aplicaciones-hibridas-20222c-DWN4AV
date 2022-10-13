@@ -1,0 +1,10 @@
+<li>
+    <a href="/productos/<%= producto._id %>">
+        Nombre: <%- producto.name %>
+    </a>
+    Precio: <%- producto.price %>
+    Categoria: <%- producto.category %>
+
+    <a href="/productos/<%= producto._id %>/eliminar">Eliminar</a>
+    <a href="/productos/<%= producto._id %>/editar">Editar</a>
+</li>
