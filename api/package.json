@@ -1,0 +1,19 @@
+{
+  "name": "mi-proyecto-lindo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "un buen proyecto",
+  "scripts": {
+    "start": "cls && node expressServer.js",
+    "server": "cls && nodemon expressServer.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
