@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import * as ProductsServices from '../services/products.services'
 
 function ProductsListPage() {
     const [products, setProducts] = useState([]);
@@ -15,8 +15,7 @@ function ProductsListPage() {
     useEffect(() => {
         console.log('esto se ejecuta cuando se monta el componente');
 
-        fetch('http://localhost:2022/api/products')
-            .then(response => response.json())
+        ProductsServices.find()
             .then(data => {
                 setProducts(data);// fuerza a que se vuelva a renderizar el componente
                 console.log(data)
