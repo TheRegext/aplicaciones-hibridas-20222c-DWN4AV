@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react'
 import * as ProductsServices from '../services/products.services'
 
+import {Link} from 'react-router-dom'
+
 function ProductsListPage() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
         console.log('esto se ejecuta cuando se modifca el estado de products');
-    }, [products]);
+    }, [products])
 
     useEffect(() => {
         console.log('esto se ejecuta cuando se modifica cualquier estado');
-    });
+    })
 
     useEffect(() => {
         console.log('esto se ejecuta cuando se monta el componente');
@@ -24,7 +26,7 @@ function ProductsListPage() {
         return () => {
             console.log('esto se ejecuta cuando se desmonta el componente');
         }
-    }, []);
+    }, [])
 
 
     /*
@@ -45,7 +47,7 @@ function ProductsListPage() {
             <ul>
                 {products.map((product) => (
                     <li>
-                        <p> Nombre: {product.name} - Precio: ${product.price} </p>
+                        <p> Nombre: {product.name} - Precio: ${product.price} <Link to={`/products/${product._id}`}>Ver</Link> </p>
                     </li>
                 ))}
             </ul>
