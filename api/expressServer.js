@@ -5,6 +5,7 @@ import CategoriasRoutes from './routers/categorias.routes.js'
 import ProductosApiRoutes from './api/routers/productos.api.routes.js'
 import CategoriasApiRoutes from './api/routers/categorias.api.routes.js'
 import ProdfavApiRoutes from './api/routers/prodfav.api.routes.js'
+import userApiRoutes from './api/routers/users.api.routes.js'
 
 const app = express()
 
@@ -20,7 +21,7 @@ app.use(CategoriasRoutes)
 app.use('/api/products', ProductosApiRoutes)
 app.use(CategoriasApiRoutes)
 app.use(ProdfavApiRoutes)
-
+app.use(userApiRoutes)
 
 app.listen(2022, function () {
     console.log('El servidor esta ON! http://localhost:2022')
