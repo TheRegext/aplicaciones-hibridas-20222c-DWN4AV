@@ -1,14 +1,11 @@
 import * as productosService from '../../services/productos.services.js';
 
 function findAll(req, res) {
-    const filter = req.query // { category: "Te" }
-
+    const filter = req.query
 
     if (filter.price) {
         filter.price = Number(filter.price)
     }
-
-    console.log(filter)
     productosService.traerProductos(filter)
         .then(productos => {
             res.status(200).json(productos)
@@ -32,6 +29,7 @@ function create(req, res) {
 }
 
 function findById(req, res) {
+
     const id = req.params.idProducto
 
     productosService.traerProductoByID(id)

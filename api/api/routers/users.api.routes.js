@@ -8,6 +8,9 @@ const router = express.Router()
 router.route('/api/users/login')
     .post(userController.login)
 
+router.route('/api/users/logout')
+    .post(userController.logout)
+
 router.route('/api/users')
     .get(userController.find)
     .post(userController.create) // registro
